@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShopX - Confusing UI</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>ShopX</h1>
+
+    <!-- ❌ корзина спрятана -->
+    <div class="cart-bad">
+        Cart: <span id="cart-count">0</span>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<!-- ❌ ПРОДУКТЫ СНАЧАЛА -->
+<section id="product-list" class="products"></section>
+
+<!-- ❌ ПОИСК -->
+<div class="search">
+    <input id="search" type="text" placeholder="Search...">
+    <button onclick="searchProducts()">Search</button>
+</div>
+
+<!-- ❌ СОРТИРОВКА -->
+<div class="sort-bad">
+    <select onchange="sortProducts(this.value)">
+        <option value="">Sort (confusing)</option>
+        <option value="low-high">Price Low → High</option>
+        <option value="high-low">Price High → Low</option>
+    </select>
+</div>
+
+<!-- ❌ ФИЛЬТРЫ -->
+<aside class="filters">
+    <h3>Filters</h3>
+
+    <label>
+        <input class="filter" type="checkbox" value="headphones" onchange="filterProducts()">
+        Headphones
+    </label><br>
+
+    <label>
+        <input class="filter" type="checkbox" value="speakers" onchange="filterProducts()">
+        Speakers
+    </label>
+</aside>
+
+<!-- ❌ ABOUT -->
+<section class="about">
+    <p>
+        Welcome to ShopX. This is a random paragraph placed in an inconvenient position.
+        Users may get distracted while trying to complete tasks.
+    </p>
+</section>
+
+<footer>
+    <a href="#">About</a>
+    <a href="#">Products</a>
+</footer>
+
+</body>
+</html>
