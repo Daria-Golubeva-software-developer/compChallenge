@@ -15,7 +15,6 @@ const products = [
 
 let cart = [];
 
-// 🔥 текущее состояние
 let currentList = [...products];
 
 // DISPLAY PRODUCTS
@@ -44,7 +43,7 @@ function addToCart(index) {
     document.getElementById("cart-count").innerText = cart.length;
 }
 
-// 🔍 SEARCH
+// SEARCH
 function searchProducts() {
     const query = document.getElementById("search").value.toLowerCase();
 
@@ -55,7 +54,7 @@ function searchProducts() {
     displayProducts(currentList);
 }
 
-// 🎯 FILTER
+// FILTER
 function filterProducts() {
     const checkboxes = document.querySelectorAll(".filter");
     let selected = [];
@@ -75,7 +74,7 @@ function filterProducts() {
     displayProducts(currentList);
 }
 
-// 🔥 SORT
+// SORT
 function sortProducts(value) {
     let sorted = [...currentList];
 

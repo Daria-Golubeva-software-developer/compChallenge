@@ -15,7 +15,6 @@ const products = [
 
 let cart = [];
 
-// 🔥 текущее состояние
 let currentList = [...products];
 
 // DISPLAY PRODUCTS

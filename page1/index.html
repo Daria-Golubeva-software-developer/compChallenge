@@ -11,7 +11,6 @@
 <header class="header">
     <h1>ShopX</h1>
 
-    <!-- ❌ корзина спрятана -->
     <div class="cart-bad">
         Cart: <span id="cart-count">0</span>
     </div>
@@ -22,25 +21,21 @@
     </nav>
 </header>
 
-<!-- ❌ ПРОДУКТЫ СНАЧАЛА -->
 <section id="product-list" class="products"></section>
 
-<!-- ❌ ПОИСК -->
 <div class="search">
     <input id="search" type="text" placeholder="Search...">
     <button onclick="searchProducts()">Search</button>
 </div>
 
-<!-- ❌ СОРТИРОВКА -->
 <div class="sort-bad">
     <select onchange="sortProducts(this.value)">
-        <option value="">Sort (confusing)</option>
+        <option value="">Sort By </option>
         <option value="low-high">Price Low → High</option>
         <option value="high-low">Price High → Low</option>
     </select>
 </div>
 
-<!-- ❌ ФИЛЬТРЫ -->
 <aside class="filters">
     <h3>Filters</h3>
 
@@ -55,7 +50,6 @@
     </label>
 </aside>
 
-<!-- ❌ ABOUT -->
 <section class="about">
     <p>
         Welcome to ShopX. This is a random paragraph placed in an inconvenient position.

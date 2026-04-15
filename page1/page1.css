@@ -78,7 +78,7 @@ footer {
     text-align: center;
 }
 
-/* 📱 MOBILE FIX (ONLY RESPONSIVENESS) */
+/* MOBILE FIX (ONLY RESPONSIVENESS) */
 @media (max-width: 768px) {
 
     .filters {
