@@ -1,14 +1,14 @@
 const products = [
     {
-        name: "Wireless Headphones",
+        name: "Smart Speaker",
         price: 99,
-        category: "headphones",
+        category: "speakers",
         image: "media/img.png"
     },
     {
-        name: "Smart Speaker",
+        name: "Wireless Headphones",
         price: 149,
-        category: "speakers",
+        category: "headphones",
         image: "media/img_1.png"
     }
 ];
